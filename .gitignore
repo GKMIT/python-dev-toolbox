@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyd
+*.so
+
+# Virtual environment
+.venv
+venv/
+env/
+.env/
+
+# Distribution / build outputs
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook files
+.ipynb_checkpoints
+
+# MyPy cache
+.mypy_cache/
+
+# pytest cache
+.pytest_cache/
+
+# Ruff cache
+.ruff_cache/
+
+# Custom - Add any other patterns you need here
+# .env # Uncomment if you use .env files for local development secrets, BUT DO NOT COMMIT THEM
