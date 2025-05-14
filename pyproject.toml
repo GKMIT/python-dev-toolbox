@@ -1,0 +1,29 @@
+[project]
+name = "python-shorthand"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ruff>=0.11.9",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+exclude = ["migrations"]
+
+# Enable all default rules (includes linting, formatting, isort-style import sorting)
+lint.select = ["ALL"]
+lint.ignore = ["D203", "D213","D104"]  # example: ignore conflicting docstring rules
+lint.fixable = ["ALL"]
+lint.unfixable = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.ruff.lint.isort]
+known-first-party = ["frameworks"]
+combine-as-imports = true
+force-single-line = false
