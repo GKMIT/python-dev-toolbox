@@ -31,7 +31,6 @@ The repository is structured as follows:
 ```text
 .
 ├── .gitignore            # Files/directories to ignore in Git
-├── LICENSE               # Repository license (e.g., MIT)
 ├── README.md             # This file
 ├── requirements-dev.txt  # Development dependencies (linters, formatters)
 ├── common/               # Reusable utilities, decorators, helpers
