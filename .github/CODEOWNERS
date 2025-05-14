@@ -1,0 +1,42 @@
+# This is the CODEOWNERS file.
+# Lines starting with '#' are comments.
+# Each line defines a file pattern and the GitHub usernames or teams responsible.
+# The pattern is a path relative to the root of the repository.
+# The last matching pattern for a path determines the code owners.
+# Owners are specified as GitHub usernames (@username) or teams (@org/team).
+
+# --- Frameworks Ownership ---
+
+# Django code owned by this group
+/frameworks/django/           @tarang @deepak @dheeraj-gkmit @aditsonigkm
+
+# FastAPI code owned by this group
+/frameworks/fastapi/          @aditsonigkm @deepak @rithvikkannagkm @nabajyoti @priyanshu-gkm
+
+# Flask code owned by this group
+/frameworks/flask/            @deepak @aditsonigkm
+
+# Celery code owned by this person
+/frameworks/celery/           @dheeraj-gkmit
+
+
+# --- Tooling Ownership ---
+
+# Airflow code owned by this group
+/tools/airflow/               @rithvikkannagkm @bhagyeshGKM
+
+
+# --- Core Configuration/Meta Ownership ---
+
+# Codeowners file itself owned by these people (optional but good practice)
+/.github/CODEOWNERS           @aditsonigkm @dheeraj-gkmit
+
+
+# --- Tests Ownership ---
+/tests/                       @priyanshu-gkm @aditsonigkm
+
+
+# --- Other directories not explicitly assigned will not require CODEOWNERS review by default ---
+# You can add more rules here for other directories like /common/, /integrations/, etc.
+# For example, to assign a default owner for files not matched above:
+# * @your-default-owner
