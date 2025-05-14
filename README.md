@@ -97,4 +97,3 @@ Contributions are highly welcome\! If you have a useful boilerplate, snippet, co
 7.  Open a Pull Request describing your contribution.
 
 Please ensure your contributions are generic enough to be useful as a reference and do not include project-specific details or sensitive information.
-
