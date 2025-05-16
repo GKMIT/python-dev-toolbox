@@ -8,13 +8,13 @@
 # --- Frameworks Ownership ---
 
 # Django code owned by this group
-/frameworks/django/           @tarang @deepak @dheeraj-gkmit @aditsonigkm
+/frameworks/django/           @tarangsomani @deejhaGKMIT  @dheeraj-gkmit @aditsonigkm
 
 # FastAPI code owned by this group
-/frameworks/fastapi/          @aditsonigkm @deepak @rithvikkannagkm @nabajyoti @priyanshu-gkm
+/frameworks/fastapi/          @aditsonigkm @deejhaGKMIT  @rithvikkannagkm @nabagkmit @priyanshu-gkm
 
 # Flask code owned by this group
-/frameworks/flask/            @deepak @aditsonigkm
+/frameworks/flask/            @deejhaGKMIT  @aditsonigkm
 
 # Celery code owned by this person
 /frameworks/celery/           @dheeraj-gkmit
@@ -34,6 +34,9 @@
 
 # --- Tests Ownership ---
 /tests/                       @priyanshu-gkm @aditsonigkm
+
+# --- Documentation Ownership ---
+README.md                    @aditsonigkm @dheeraj-gkmit @tarangsomani
 
 
 # --- Other directories not explicitly assigned will not require CODEOWNERS review by default ---
