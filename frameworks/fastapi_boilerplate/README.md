@@ -12,6 +12,16 @@ This is a production-ready FastAPI boilerplate with a structured project setup t
 - **Dependency Management**: Using `uv` for fast, reliable Python package management
 - **CORS Middleware**: Pre-configured Cross-Origin Resource Sharing (CORS)
 
+
+# TODO
+- [x] Folder structure setup
+- [x] uv setup
+- [ ] Docker and dockercompose setup
+- [ ] Alembic setup (Async PostgreSQL)
+- [ ] Middleware setup
+- [ ] Global handlers setup
+
+
 ## Project Structure
 
 ```
@@ -115,3 +125,5 @@ async def get_examples():
 async def get_example(example_id: int):
     return {"message": f"Get example with ID {example_id}"}
 ```
+
+
