@@ -7,12 +7,13 @@ This repository serves as a collection of reusable boilerplate code, configurati
 
 ## Table of Contents
 
-- [What's Inside](#whats-inside)
-- [Repository Structure](#repository-structure)
-- [Getting Started](#getting-started)
-- [How to Use](#how-to-use)
-- [Contributing](#contributing)
-- [License](#license)
+- [Python Boilerplate and Reference Repository](#python-boilerplate-and-reference-repository)
+  - [Table of Contents](#table-of-contents)
+  - [What's Inside](#whats-inside)
+  - [Repository Structure](#repository-structure)
+  - [Getting Started](#getting-started)
+  - [How to Use](#how-to-use)
+  - [Contributing](#contributing)
 
 ## What's Inside
 
@@ -61,17 +62,38 @@ Navigate into the relevant directories to find the code or configurations you ar
 
 To get a local copy of the repository:
 
-1.  Clone the repository:
-    ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
-    cd YOUR_REPO_NAME
-    ```
-2.  *(Optional but recommended)* Set up a virtual environment:
-    ```bash
-    python -m venv .venv
-    source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
-    ```
+1. **Clone the Repository**
 
+   Clone the repository and navigate to the project directory:
+
+   ```bash
+   git clone https://github.com/GKMIT/python-dev-toolbox
+   cd python-dev-toolbox
+   ```
+
+2. **Install uv**
+
+   Install the `uv` tool using the following command:
+
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+
+3. **Set Up Virtual Environment and Install Dependencies**
+
+   Create a virtual environment and sync dependencies using a single lockfile. The `uv` tool is fast and efficient, and this setup allows flexibility to switch to module-level `pyproject.toml` files if needed in the future:
+
+   ```bash
+   uv sync
+   ```
+
+4. **Install Pre-commit Hooks**
+
+   Set up pre-commit hooks to ensure code quality:
+
+   ```bash
+   pre-commit install
+   ```
 
 ## How to Use
 
