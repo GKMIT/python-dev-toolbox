@@ -7,12 +7,13 @@ This repository serves as a collection of reusable boilerplate code, configurati
 
 ## Table of Contents
 
-- [What's Inside](#whats-inside)
-- [Repository Structure](#repository-structure)
-- [Getting Started](#getting-started)
-- [How to Use](#how-to-use)
-- [Contributing](#contributing)
-- [License](#license)
+- [Python Boilerplate and Reference Repository](#python-boilerplate-and-reference-repository)
+  - [Table of Contents](#table-of-contents)
+  - [What's Inside](#whats-inside)
+  - [Repository Structure](#repository-structure)
+  - [Getting Started](#getting-started)
+  - [How to Use](#how-to-use)
+  - [Contributing](#contributing)
 
 ## What's Inside
 
@@ -66,10 +67,18 @@ To get a local copy of the repository:
     git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
     cd YOUR_REPO_NAME
     ```
-2.  *(Optional but recommended)* Set up a virtual environment:
+2. Use install uv using
     ```bash
-    python -m venv .venv
-    source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    ```
+3. for the virtualenv setup and sync run this command. It will create a venv and install dependencies. Using a single lockfile as uv is pretty fast and if in future any issues arise we can go with module level project.toml.
+    ```bash
+    uv sync
+    ```
+    
+5. Also Install pre commits too ;
+    ```bash
+    pre-commit install
     ```
 
 
