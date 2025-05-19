@@ -67,8 +67,8 @@ To get a local copy of the repository:
    Clone the repository and navigate to the project directory:
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-   cd YOUR_REPO_NAME
+   git clone https://github.com/GKMIT/python-dev-toolbox
+   cd python-dev-toolbox
    ```
 
 2. **Install uv**
