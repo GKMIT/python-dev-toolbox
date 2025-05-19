@@ -62,25 +62,38 @@ Navigate into the relevant directories to find the code or configurations you ar
 
 To get a local copy of the repository:
 
-1.  Clone the repository:
-    ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
-    cd YOUR_REPO_NAME
-    ```
-2. Use install uv using
-    ```bash
-    curl -LsSf https://astral.sh/uv/install.sh | sh
-    ```
-3. for the virtualenv setup and sync run this command. It will create a venv and install dependencies. Using a single lockfile as uv is pretty fast and if in future any issues arise we can go with module level project.toml.
-    ```bash
-    uv sync
-    ```
-    
-5. Also Install pre commits too ;
-    ```bash
-    pre-commit install
-    ```
+1. **Clone the Repository**
 
+   Clone the repository and navigate to the project directory:
+
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   cd YOUR_REPO_NAME
+   ```
+
+2. **Install uv**
+
+   Install the `uv` tool using the following command:
+
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+
+3. **Set Up Virtual Environment and Install Dependencies**
+
+   Create a virtual environment and sync dependencies using a single lockfile. The `uv` tool is fast and efficient, and this setup allows flexibility to switch to module-level `pyproject.toml` files if needed in the future:
+
+   ```bash
+   uv sync
+   ```
+
+4. **Install Pre-commit Hooks**
+
+   Set up pre-commit hooks to ensure code quality:
+
+   ```bash
+   pre-commit install
+   ```
 
 ## How to Use
 
