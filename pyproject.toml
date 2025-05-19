@@ -8,7 +8,14 @@ dependencies = [
     "mypy>=1.15.0",
     "pre-commit>=4.2.0",
     "ruff>=0.11.9",
+    "fastapi-boilerplate"
 ]
+
+[tool.uv.sources]
+fastapi-boilerplate = { workspace = true }
+
+[tool.uv.workspace]
+members = ["frameworks/fastapi_boilerplate"]
 
 [tool.ruff]
 line-length = 88
