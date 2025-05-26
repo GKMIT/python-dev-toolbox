@@ -57,5 +57,5 @@ EXPOSE 8000
 # Health check
 HEALTHCHECK CMD curl --fail http://localhost:8000/health || exit 1
 
-# Run FastAPI with Uvicorn
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Run FastAPI
+CMD ["fastapi", "run", "main/app.py", "--port", "8000"]
