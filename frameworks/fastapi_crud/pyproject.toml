@@ -1,0 +1,20 @@
+[project]
+name = "fastapi-crud"
+version = "0.1.0"
+description = "Simple Fast-api application with crud operations and docker deployment"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]>=0.115.12",
+    "pydantic-settings>=2.9.1",
+    "pydantic>=2.11.4",
+    "sqlalchemy>=2.0.36",
+    "redis>=5.1.1",
+    "psycopg2-binary==2.9.10",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.3",
+    "httpx>=0.27.2",
+]
